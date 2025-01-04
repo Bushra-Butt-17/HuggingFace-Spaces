@@ -1,3 +1,4 @@
-gradio
-transformers
+gradio==3.32.0
+transformers==4.33.2
 tensorflow
+tf-keras
