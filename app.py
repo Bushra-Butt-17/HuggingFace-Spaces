@@ -3,7 +3,7 @@ import gradio as gr
 
 
 model = pipeline(
-    "summarization",model="t5-small"
+    "summarization",
 )
 
 def predict(prompt):
@@ -13,4 +13,4 @@ def predict(prompt):
 
 # create an interface for the model
 with gr.Interface(predict, "textbox", "text") as interface:
-    interface.launch()
+    interface.launch(share=True)
